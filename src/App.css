@@ -10,7 +10,7 @@ body{
   justify-content: center;
   }
 .top{
-  max-width: 100%;
+  width: 100%;
   height: 160px;
 }
 video{
@@ -39,6 +39,10 @@ video{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.art-block{
+  margin: 10px;
 }
 
 footer{
@@ -269,13 +273,24 @@ p{
   }
   .top{
     height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   nav{
-    max-width: 100%;
+    width: 100%;
     padding: 20px;
   }
   .footer{
-    max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  }
+  video{
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .link{
     font-size: 25px;
@@ -344,11 +359,6 @@ p{
   height: 100%;
 }
 
-video{
-  height: 50%;
-  position: relative;
-}
-
 .first-page{
   flex-wrap: wrap;
 }
@@ -367,6 +377,11 @@ video{
 }
 .heading{
   margin-bottom: 20px;
+}
+.contacts{
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 }
 

@@ -12,6 +12,7 @@ import Footer from './Footer';
 
 
 
+
 function App() {
 
   return (<div>
@@ -20,14 +21,14 @@ function App() {
     </div>
     <Router>
       <nav >
-        <Link to="/home" className="link">WELCOME</Link>
+        <Link to="/" className="link">WELCOME</Link>
         <Link className="link" to='/art'>ART</Link>
         <Link className="link" to='/classes'>MASTER CLASSES</Link>
         <Link className="link" to='/about'>ABOUT</Link>
         <Link className="link" to='/contact'>CONTACT</Link>
       </nav>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="art" element={<Art/>} />
         <Route path="classes" element={<Classes />} />
         <Route path="about" element={<About />} />
